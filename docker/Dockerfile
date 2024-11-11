@@ -6,7 +6,7 @@ RUN go mod download
 RUN go build -buildvcs=false -o ./main
 
 # Copy the EICAR test file into the container
-COPY eicar.txt /eicar.txt
+# COPY eicar.txt /eicar.txt
 
 ENV PORT 8081
 EXPOSE 8081
